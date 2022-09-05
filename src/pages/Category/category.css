@@ -1,0 +1,73 @@
+/* Category */
+.categoryPageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.categoryCardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* CategoryCard */
+.categoryCard {
+  height: 25rem;
+  margin: 2rem 0.75rem;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryCard:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-background);
+}
+
+.cCImageContainer {
+  height: 80%;
+  width: 100%;
+  flex: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cCImageContainer > img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.cCTitleAndPriceContainer {
+  height: 20%;
+  width: 120%;
+  flex: 2;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.cCTitleAndPriceContainer > p:first-of-type {
+  flex: 5;
+}
+
+.cCTitleAndPriceContainer > p:last-of-type {
+  flex: 2;
+  font-weight: 800;
+}

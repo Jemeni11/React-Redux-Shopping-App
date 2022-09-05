@@ -1,0 +1,73 @@
+:root {
+  --main-background: #0f172a;
+  --main-background-hover: #334155;
+  --danger: #c82333;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* #root > * {
+  outline: 1px dotted chartreuse;
+} */
+
+.flex-row-centered-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageContainer {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+.pageHeaderTitle {
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--main-background);
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+.basicButton {
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: var(--main-background);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.basicButton:hover {
+  background-color: var(--main-background-hover);
+  cursor: pointer;
+}
+
+.basicButton > a {
+  color: white;
+  text-decoration: none;
+}

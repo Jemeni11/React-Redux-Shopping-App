@@ -1,0 +1,53 @@
+#NavbarContainer {
+  background-color: white;
+  padding: 0 0.75rem;
+  margin-bottom: 0.25rem;
+  flex: 1;
+  height: 7vh;
+  width: 85%;
+}
+
+#NavbarContainer *:hover {
+  cursor: pointer;
+}
+
+#NavbarContainer {
+  margin-left: 5%;
+}
+
+#NavbarContainer span {
+  padding: 1.5rem 0.75rem;
+  opacity: 0.65;
+}
+
+#NavbarContainer span a {
+  text-decoration: none;
+}
+
+.activeLink {
+  font-weight: bold;
+  opacity: 1;
+  color: #ff7e1b;
+}
+
+#NavbarContainer span:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-bottom-color: var(--main-background);
+}
+
+#NavbarCartandUser {
+  width: 6rem;
+}
+
+#avatar-image {
+  height: 40%;
+  width: 40%;
+}
+
+.border-bottom {
+  margin-inline: 0.5rem;
+  border-bottom-width: 0.25rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}

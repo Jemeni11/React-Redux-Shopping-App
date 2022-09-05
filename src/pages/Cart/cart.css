@@ -1,0 +1,167 @@
+#cartSectionContainer {
+  width: 90%;
+}
+
+#cartContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#cartDetails {
+  flex: 6;
+  height: 68vh;
+  overflow-y: scroll;
+}
+
+#cartDetails > ul {
+  list-style-type: none;
+}
+
+.CartDetailsItemCartContainer {
+  width: 100%;
+  min-height: 10rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(251, 249, 252);
+}
+
+.CartDetailsItemImageContainer {
+  height: 100%;
+  padding: 0.5rem 0;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CartDetailsItemImageContainer img {
+  max-width: 80%;
+  max-height: 9rem;
+  object-fit: contain;
+}
+
+.CartDetailsItemDetails {
+  height: 100%;
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 1rem;
+}
+
+.CDID_category {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.CDID_title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.CDID_buttonContainer {
+  height: 3rem;
+  width: 80%;
+  display: flex;
+  column-gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.CDID_buttonContainer > * {
+  height: 2rem;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: var(--main-background);
+  cursor: pointer;
+}
+
+.CDID_removeButton {
+  background-color: var(--danger);
+}
+
+.CDID_priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0.75rem 0;
+}
+
+.CDID_priceContainer * {
+  padding-inline: 0.25rem;
+}
+
+.CDID_priceContainer > div {
+  display: flex;
+  align-items: center;
+}
+
+.CDID_price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding-left: 0;
+}
+
+.CDID_total {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#orderSummary {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+#orderSummary > table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#tableTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.tableHeadings {
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0.9;
+}
+
+.tableValue {
+  text-align: right;
+  font-weight: bold;
+}
+
+#tableTotal {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-top: 0.25rem double var(--main-background);
+  border-bottom: 0.25rem double var(--main-background);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--main-background);
+}
+
+tr td {
+  padding: 0.5rem 0;
+}
+
+#checkoutButton {
+  width: 90%;
+  margin-top: 1rem;
+}

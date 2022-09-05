@@ -1,0 +1,31 @@
+/* CategoriesItem */
+.categoriesItem {
+  display: flex;
+  align-self: center;
+  min-height: 1.5rem;
+  background-color: var(--main-background);
+  color: white;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0.25rem 1rem;
+  padding: 1rem 3rem;
+}
+
+.categoriesItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.categoriesItem:hover {
+  background-color: var(--main-background-hover);
+  cursor: pointer;
+}
+
+/* Categories */
+#categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

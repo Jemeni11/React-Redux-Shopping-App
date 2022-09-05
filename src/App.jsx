@@ -39,8 +39,6 @@ function App() {
 
   const FIREBASE_INVENTORY_URL =
     "https://redux-shopping-cart-b9135-default-rtdb.firebaseio.com/inventory.json";
-  const FIREBASE_USER_CART_URL =
-    "https://redux-shopping-cart-b9135-default-rtdb.firebaseio.com/user.json";
 
   useEffect(() => {
     fetch(FIREBASE_INVENTORY_URL)

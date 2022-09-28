@@ -165,3 +165,21 @@ tr td {
   width: 90%;
   margin-top: 1rem;
 }
+
+@media all and (max-width: 52rem) {
+  #cartSectionContainer {
+    width: 97.5%;
+  }
+
+  #cartContainer {
+    flex-direction: column;
+  }
+
+  .CartDetailsItemImageContainer {
+    flex: 4;
+  }
+
+  .CartDetailsItemDetails {
+    flex: 6;
+  }
+}

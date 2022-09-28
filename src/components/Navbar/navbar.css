@@ -3,21 +3,22 @@
   padding: 0 0.75rem;
   margin-bottom: 0.25rem;
   flex: 1;
-  height: 7vh;
-  width: 85%;
+  min-height: 7vh;
+  width: 90%;
 }
 
 #NavbarContainer *:hover {
   cursor: pointer;
 }
 
-#NavbarContainer {
-  margin-left: 5%;
+#categoryNavLinks {
+  display: flex;
 }
 
 #NavbarContainer span {
-  padding: 1.5rem 0.75rem;
+  padding: 1.5rem 0.85rem;
   opacity: 0.65;
+  flex: 1;
 }
 
 #NavbarContainer span a {
@@ -37,7 +38,7 @@
 }
 
 #NavbarCartandUser {
-  width: 6rem;
+  width: 3rem;
 }
 
 #avatar-image {
@@ -45,8 +46,46 @@
   width: 40%;
 }
 
+@media all and (max-width: 52rem) {
+  #NavbarContainer {
+    width: 100vw;
+    justify-content: space-between;
+    margin-bottom: 12.5vh;
+  }
+
+  #categoryNavLinks {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(7vh + 0.25rem);
+    width: 98%;
+    left: -1%;
+  }
+
+  #NavbarCartandUser {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  #NavbarContainer {
+    width: 100vw;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+  }
+
+  #categoryNavLinks {
+    font-size: 0.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
 .border-bottom {
-  margin-inline: 0.5rem;
+  margin-inline: 0.65rem;
   border-bottom-width: 0.25rem;
   border-bottom-style: solid;
   border-bottom-color: transparent;

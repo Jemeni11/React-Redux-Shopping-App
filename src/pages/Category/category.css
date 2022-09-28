@@ -9,10 +9,10 @@
 }
 
 .categoryCardContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  width: 95vw;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-rows: 1fr;
 }
 
 /* CategoryCard */

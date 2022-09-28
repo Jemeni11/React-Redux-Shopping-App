@@ -26,13 +26,15 @@ const Navbar = () => {
       </div>
       <div className="flex-row-centered-items">
         <NavBarCustomLink location="/categories" name="Categories" />
-        {categories[1].map((category) => (
-          <NavBarCustomLink
-            key={category}
-            location={`/categories/${category}`}
-            name={categoryNameFromParamsName(categories, category)}
-          />
-        ))}
+        <div id="categoryNavLinks">
+          {categories[1].map((category) => (
+            <NavBarCustomLink
+              key={category}
+              location={`/categories/${category}`}
+              name={categoryNameFromParamsName(categories, category)}
+            />
+          ))}
+        </div>
       </div>
       <div id="NavbarCartandUser" className="flex-row-centered-items">
         <NavLink to="/cart">

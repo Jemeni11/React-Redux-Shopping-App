@@ -74,6 +74,35 @@
   background-color: var(--danger);
 }
 
-#removeFromCartButton > *{
+#removeFromCartButton > * {
   margin-inline: 0.2rem;
+}
+
+@media (max-width: 950px) {
+  #ProductContainer {
+    flex-direction: column;
+    margin-top: 10vh;
+    gap: 1rem;
+  }
+
+  .flex-half-width-padded-item {
+    width: 80%;
+  }
+
+  #cartControlsContainer {
+    flex-direction: column;
+  }
+
+  #CartButtonsContainer button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .flex-half-width-padded-item {
+    width: 90%;
+    padding: 0 1.5rem;
+  }
 }

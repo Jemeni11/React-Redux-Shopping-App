@@ -1,6 +1,7 @@
 #NavbarContainer {
   background-color: white;
   padding: 0 0.75rem;
+  margin-top: 1rem;
   margin-bottom: 0.25rem;
   flex: 1;
   min-height: 7vh;
@@ -13,6 +14,7 @@
 
 #categoryNavLinks {
   display: flex;
+  align-items: center;
 }
 
 #NavbarContainer span {
@@ -38,7 +40,7 @@
 }
 
 #NavbarCartandUser {
-  width: 3rem;
+  width: 4rem;
 }
 
 #avatar-image {
@@ -55,6 +57,7 @@
 
   #categoryNavLinks {
     font-size: 0.9rem;
+    margin-inline: 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;

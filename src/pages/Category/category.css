@@ -9,6 +9,7 @@
 }
 
 .categoryCardContainer {
+  padding-inline: 1vw;
   display: grid;
   width: 95vw;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
@@ -70,4 +71,10 @@ a {
 .cCTitleAndPriceContainer > p:last-of-type {
   flex: 2;
   font-weight: 800;
+}
+
+@media all and (max-width: 52rem) {
+  .categoryCardContainer {
+    padding-inline: 2vw;
+  }
 }

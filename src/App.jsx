@@ -36,11 +36,11 @@ function App() {
     );
   };
 
-  const FAKE_STORE_API_PRODUCTS =
-    "https://fakestoreapi.com/products";
+  const FIREBASE_INVENTORY_URL =
+    "https://redux-shopping-cart-b9135-default-rtdb.firebaseio.com/inventory.json";
 
   useEffect(() => {
-    fetch(FAKE_STORE_API_PRODUCTS)
+    fetch(FIREBASE_INVENTORY_URL)
       .then((res) => res.json())
       .then((data) => {
         for (const [, value] of Object.entries(data)) {
